@@ -1,0 +1,37 @@
+NAME
+    RT-Extension-QuickComment - Add QuickComment box to the Ticket Display
+    page
+
+DESCRIPTION
+    After installing this extension, on the ticket's page, you should see a
+    new box named 'Quick Comment' that will let you add a single line
+    comment to the ticket without leaving the display page.
+
+INSTALLATION
+    perl Makefile.PL
+    make
+    make install
+        May need root permissions
+
+    Edit your /opt/rt4/etc/RT_SiteConfig.pm
+        Add this line:
+
+            Set(@Plugins, qw(RT::Extension::QuickComment));
+
+        or add "RT::Extension::QuickComment" to your existing @Plugins line.
+
+    Clear your mason cache
+            rm -rf /opt/rt4/var/mason_data/obj
+
+    Restart your webserver
+
+AUTHOR
+    Daniel De Marco <ddm@didiemme.net>
+
+LICENSE AND COPYRIGHT
+    This software is Copyright (c) 2013 by Daniel De Marco
+
+    This is free software, licensed under:
+
+      The GNU General Public License, Version 2, June 1991
+

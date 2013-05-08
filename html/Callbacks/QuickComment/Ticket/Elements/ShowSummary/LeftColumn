@@ -1,0 +1,18 @@
+<& /Elements/TitleBoxStart, title => loc("Quick Comment"), title_href => RT->Config->Get('WebPath')."/Ticket/Update.html?Action=Comment;id=".$Ticket->Id &>
+
+<FORM ACTION="Update.html" NAME="TicketUpdate" METHOD=POST enctype="multipart/form-data"> 
+<input type="hidden" name="Action" value="Comment"> 
+<input type="hidden" name="UpdateType" value="private"> 
+<input type="hidden" name="id" value="<% $Ticket->Id %>"> 
+
+<input NAME="UpdateContent" size=60> 
+
+<INPUT TYPE=SUBMIT NAME="SubmitTicket" VALUE='Add'> 
+
+</FORM> 
+<& /Elements/TitleBoxEnd &> 
+
+<%ARGS>
+$Ticket => undef
+</%ARGS>
+
