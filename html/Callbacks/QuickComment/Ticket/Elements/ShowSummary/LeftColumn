@@ -1,3 +1,11 @@
+<script type="text/javascript">
+        jQuery(function() {
+                jQuery("#requestor-accordion").accordion({
+                    active: -1,
+                });
+        });
+</script>
+
 <& /Elements/TitleBoxStart, title => loc("Quick Comment"), title_href => RT->Config->Get('WebPath')."/Ticket/Update.html?Action=Comment;id=".$Ticket->Id &>
 
 <FORM ACTION="Update.html" NAME="TicketUpdate" METHOD=POST enctype="multipart/form-data"> 
