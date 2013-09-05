@@ -13,7 +13,7 @@
 <input type="hidden" name="UpdateType" value="private"> 
 <input type="hidden" name="id" value="<% $Ticket->Id %>"> 
 
-<input type="text" NAME="UpdateContent" size=60 autocomplete="off"> 
+<input type="text" NAME="UpdateContent" size=60 autocomplete="off" style="width: 80%;"> 
 
 <INPUT TYPE=SUBMIT NAME="SubmitTicket" VALUE='Add'> 
 
