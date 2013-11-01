@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package RT::Extension::QuickComment;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 NAME
 
@@ -14,7 +14,7 @@ After installing this extension, on the ticket's page, you should see
 a new box named 'Quick Comment' that will let you add a single line
 comment to the ticket without leaving the display page.
 
-=head1 INSTALLATION 
+=head1 INSTALLATION
 
 =over
 
