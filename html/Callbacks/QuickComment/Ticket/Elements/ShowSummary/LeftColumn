@@ -1,23 +1,15 @@
-<script type="text/javascript">
-        jQuery(function() {
-                jQuery("#requestor-accordion").accordion({
-                    active: -1,
-                });
-        });
-</script>
-
 <&| /Widgets/TitleBox, title => loc("Quick Comment"), title_href => RT->Config->Get('WebPath')."/Ticket/Update.html?Action=Comment;id=".$Ticket->Id, class => 'ticket-info-reminders' &>
 
-<FORM ACTION="Update.html" NAME="TicketUpdate" METHOD=POST enctype="multipart/form-data"> 
-<input type="hidden" name="Action" value="Comment"> 
-<input type="hidden" name="UpdateType" value="private"> 
-<input type="hidden" name="id" value="<% $Ticket->Id %>"> 
+<FORM ACTION="Update.html" NAME="TicketUpdate" METHOD=POST enctype="multipart/form-data">
+<input type="hidden" name="Action" value="Comment">
+<input type="hidden" name="UpdateType" value="private">
+<input type="hidden" name="id" value="<% $Ticket->Id %>">
 
-<input type="text" NAME="UpdateContent" size=60 autocomplete="off" style="width: 80%;"> 
+<input type="text" NAME="UpdateContent" size=60 autocomplete="off" style="width: 80%;">
 
-<INPUT TYPE=SUBMIT NAME="SubmitTicket" VALUE='Add'> 
+<INPUT TYPE=SUBMIT NAME="SubmitTicket" VALUE='Add'>
 
-</FORM> 
+</FORM>
 
 </&>
 
